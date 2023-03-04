@@ -46,7 +46,6 @@ public class Empresa {
 		quantidade = omega.nextInt();
 		produto.removerProdutos(quantidade);
 		System.out.println("Dados do produto: "+ produto);
-		
 		omega.close();
 	}
 }
