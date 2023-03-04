@@ -21,8 +21,8 @@ public class Banco {
 		
 		System.out.println("\nSeu salto atual é :" + conta.getSaldo());
 		System.out.println("Deseja depositar?");
-		String resposta = Lambda.next();
-		if (resposta.toLowerCase().startsWith("s")) {
+		String resposta = Lambda.next().toLowerCase();
+		if (resposta.startsWith("s")) {
 			double valorDeDeposito = Lambda.nextDouble();
 			conta.depositar(valorDeDeposito);
 		}
