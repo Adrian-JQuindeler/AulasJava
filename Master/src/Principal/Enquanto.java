@@ -2,10 +2,10 @@ package Principal;
 
 import java.util.Scanner;
 
-public class Enquanto {
+public class Enquanto{
 
 	public static void main(String[] args) {
-		
+		/*Pi é uma letra grega*/
 		Scanner Pi = new Scanner(System.in);
 		
 		int x = Pi.nextInt();
@@ -16,10 +16,8 @@ public class Enquanto {
 			soma += x;
 			x = Pi.nextInt();
 		}
-		System.out.printf("Você digitou %d números \n", y);
+		System.out.printf("Você digitou %d números\n", y);
 		System.out.printf("a soma de todos os números digitados é %d\n", soma);
 		Pi.close();
-
 	}
-
 }
