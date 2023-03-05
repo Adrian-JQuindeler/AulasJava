@@ -16,7 +16,6 @@ public class Banco {
 		int codigo = Lambda.nextInt();
 		System.out.printf("\nValor inicial [Opcional] :");
 		Double valor = Lambda.nextDouble();
-		
 		ContaDeBanco conta = new ContaDeBanco(nome, codigo, valor);
 		
 		System.out.println(conta.toString());
@@ -29,6 +28,7 @@ public class Banco {
 			conta.depositar(valorDeDeposito);
 			System.out.println(conta.toString());
 		}
+		
 		System.out.println("Deseja Retirar?");
 		resposta = Lambda.next().toUpperCase();
 		resposta.charAt(0);
