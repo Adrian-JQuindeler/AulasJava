@@ -26,4 +26,12 @@ public class ContaDeBanco {
 		saldo -= valor;
 		return saldo;
 	}
+	public String toString() {
+		return "Nome: "
+			+ nome
+			+ ", Código: "
+			+ getNumero()
+			+ ", Saldo: "
+			+ getSaldo();
+	}
 }

@@ -19,18 +19,29 @@ public class Banco {
 		
 		ContaDeBanco conta = new ContaDeBanco(nome, codigo, valor);
 		
-		System.out.println("\nSeu salto atual é :" + conta.getSaldo());
+		System.out.println(conta.toString());
 		System.out.println("Deseja depositar?");
-		String resposta = Lambda.next().toLowerCase();
-		if (resposta.startsWith("s")) {
+		String resposta = Lambda.next().toUpperCase();
+		resposta.charAt(0);
+		if (resposta.startsWith("S")) {
+			System.out.printf("\nValor a ser depositado:");
 			double valorDeDeposito = Lambda.nextDouble();
 			conta.depositar(valorDeDeposito);
+			System.out.println(conta.toString());
 		}
 		System.out.println("Deseja Retirar?");
-		resposta = Lambda.next();
-		if (resposta.toLowerCase().startsWith("s")) {
+		resposta = Lambda.next().toUpperCase();
+		resposta.charAt(0);
+		if (resposta.startsWith("S")) {
+			System.out.printf("\nValor a ser retirado:");
 			double valorDeRetirada = Lambda.nextDouble();
+			if (valorDeRetirada > conta.getSaldo()) {
+				System.out.println("O valor inserido é maior que o saldo disponível");
+			}
+			else {
 			conta.retirar(valorDeRetirada);
+			System.out.println(conta.toString());
+			}
 		}
 	}
 }
