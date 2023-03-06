@@ -23,10 +23,10 @@ public class Urna {
         System.out.println("---------------");
         System.out.println("URNA ELETRÔNICA");
         System.out.println("---------------");
-        System.out.println("Candidatos: \n[1] Thomas Turbando \n[2] Jacinto Pinto Aquino Rego \n[3] Mia Regaça \n[4] Chu Passeios");
+        System.out.println("Candidatos: \n[13] Thomas Turbando \n[22] Jacinto Pinto Aquino Rego \n[44] Mia Regaça \n[12] Chu Passeios");
         System.out.printf("Seu voto: ");
         int resposta = omicron.nextInt();
-            if (resposta == 1){
+            if (resposta == 13){
                 System.out.println("Confirmar voto para 'Thomas Turbando?' [S/N]");
                 String confirmar = omicron.next().toUpperCase();
                 confirmar.charAt(0);
@@ -40,7 +40,7 @@ public class Urna {
                     System.out.println("Voto cancelado");
                     }
                 }
-            else if (resposta == 2){
+            else if (resposta == 22){
                     System.out.println("Confirmar voto para 'Jacinto Pinto?' [S/N]");
                     String confirmar = omicron.next().toUpperCase();
                     confirmar.charAt(0);
@@ -54,7 +54,7 @@ public class Urna {
                         System.out.println("Voto cancelado");
                     }
                 }
-            else if (resposta == 3){
+            else if (resposta == 44){
                     System.out.println("Confirmar voto para 'Mia Regaça?' [S/N]");
                     String confirmar = omicron.next().toUpperCase();
                     confirmar.charAt(0);
@@ -68,7 +68,7 @@ public class Urna {
                         System.out.println("Voto cancelado");
                     }
                 }
-            else if (resposta == 4){
+            else if (resposta == 12){
                     System.out.println("Confirmar voto para 'Chu Passeios?' [S/N]");
                     String confirmar = omicron.next().toUpperCase();
                     confirmar.charAt(0);
