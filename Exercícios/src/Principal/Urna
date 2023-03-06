@@ -15,7 +15,7 @@ public class Urna {
     int horario = 0;
     
     while (true) {
-        System.out.printf("Qual o horario? ");
+        System.out.printf("\n\nQual o horario? ");
         horario = omicron.nextInt();
         if (horario > 18){
             break;
