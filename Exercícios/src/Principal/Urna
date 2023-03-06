@@ -15,14 +15,14 @@ public class Urna {
     int horario = 0;
     
     while (true) {
-        System.out.printf("\n\nQual o horario? ");
+        System.out.printf("\n\nQual o horario?");
         horario = omicron.nextInt();
         if (horario > 18){
             break;
             }
-        System.out.println("---------------");
+        System.out.println("\n\n---------------");
         System.out.println("URNA ELETRÔNICA");
-        System.out.println("---------------");
+        System.out.println("---------------\n");
         System.out.println("Candidatos: \n[13] Thomas Turbando \n[22] Jacinto Pinto Aquino Rego \n[44] Mia Regaça \n[12] Chu Passeios");
         System.out.printf("Seu voto: ");
         int resposta = omicron.nextInt();
@@ -31,7 +31,7 @@ public class Urna {
                 String confirmar = omicron.next().toUpperCase();
                 confirmar.charAt(0);
                 if (confirmar.startsWith("S")){
-                    System.out.println("--------------------------------------");
+                    System.out.println("\n--------------------------------------");
                     System.out.println("Voto confirmado para 'Thomas Turbando'");
                     System.out.println("--------------------------------------");
                     votosThomas += 1;
@@ -45,7 +45,7 @@ public class Urna {
                     String confirmar = omicron.next().toUpperCase();
                     confirmar.charAt(0);
                     if (confirmar.startsWith("S")){
-                        System.out.println("------------------------------------");
+                        System.out.println("\n------------------------------------");
                         System.out.println("Voto confirmado para 'Jacinto Pinto'");
                         System.out.println("------------------------------------");
                         votosJacinto += 1;
@@ -59,7 +59,7 @@ public class Urna {
                     String confirmar = omicron.next().toUpperCase();
                     confirmar.charAt(0);
                     if (confirmar.startsWith("S")){
-                        System.out.println("---------------------------------");
+                        System.out.println("\n---------------------------------");
                         System.out.println("Voto confirmado para 'Mia Regaça'");
                         System.out.println("---------------------------------");
                         votosMia += 1;
@@ -73,7 +73,7 @@ public class Urna {
                     String confirmar = omicron.next().toUpperCase();
                     confirmar.charAt(0);
                     if (confirmar.startsWith("S")){
-                        System.out.println("-----------------------------------");
+                        System.out.println("\n-----------------------------------");
                         System.out.println("Voto confirmado para 'Chu passeios'");
                         System.out.println("-----------------------------------");
                         votosChu += 1;
@@ -83,12 +83,12 @@ public class Urna {
                     }
                 }
             else{
-                System.out.println("-------------");
+                System.out.println("\n-------------");
                 System.out.println("Voto Inválido");
                 System.out.println("-------------");
                 }
             }
-    System.out.println("-----------");
+    System.out.println("\n-----------");
     System.out.println("RESULTADOS: ");
     System.out.println("-----------");
     System.out.println("Thomas Turbando = " + votosThomas);
